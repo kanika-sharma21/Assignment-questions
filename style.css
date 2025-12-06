@@ -51,6 +51,7 @@ main {
     font-size: 1em;
     cursor: pointer;
     margin-bottom: 30px;
+    margin-top: 10px;
     transition: all 0.3s;
 }
 
@@ -201,6 +202,29 @@ main {
     transform: translateX(5px);
 }
 
+.action-btn {
+    background: #f1f3f5;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: #e9ecef;
+    border-color: #667eea;
+}
+
+.edit-btn:hover {
+    background: #d4edff;
+}
+
+.delete-btn:hover {
+    background: #ffe4e4;
+}
+
 .q-number {
     display: inline-flex;
     align-items: center;
@@ -223,12 +247,13 @@ main {
     word-wrap: break-word;
 }
 
-.assignment-date {
-    color: #999;
-    font-size: 0.9em;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 15px;
-    margin-top: 15px;
+.share-btn {
+    background: #f1f3f5;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
 }
 
 .empty-msg {
