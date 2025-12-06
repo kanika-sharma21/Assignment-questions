@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Questions Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Assignment Questions</h1>
+            <h3> Web Programming</h3>
+            <p>View all class assignments</p>
+        </header>
+
+        <main>
+            <!-- Admin Panel Button -->
+            <button id="adminToggleBtn" class="admin-btn">🔐 Post Assignment</button>
+
+            <!-- Admin Form Section -->
+            <section id="adminPanel" class="admin-panel" style="display: none;">
+                <h2>Add New Assignment</h2>
+                <form id="assignmentForm">
+                    <div class="form-group">
+                        <label for="qNum">Question Number:</label>
+                        <input type="number" id="qNum" placeholder="e.g., 1, 2, 3..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qText">Question Text:</label>
+                        <textarea id="qText" placeholder="Enter the assignment question..." rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qDate">Upload Date:</label>
+                        <input type="date" id="qDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qPass">Password:</label>
+                        <input type="password" id="qPass" placeholder="Enter admin password" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Post Assignment</button>
+                    <button type="button" id="closeBtn" class="btn-close">Close</button>
+                </form>
+                <div id="msgDiv" class="message"></div>
+            </section>
+
+            <!-- Questions Display Section -->
+            <section class="display-section">
+                <h2>All Assignments</h2>
+                <div id="assignList" class="assignments-container">
+                    <p class="empty-msg">No assignments posted yet.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Assignment Management System</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
