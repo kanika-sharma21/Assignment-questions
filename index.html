@@ -15,7 +15,15 @@
         </header>
 
         <main>
-            <!-- Admin Panel Button -->
+            <!-- Questions Display Section (shown first) -->
+            <section class="display-section">
+                <h2>All Assignments</h2>
+                <div id="assignList" class="assignments-container">
+                    <p class="empty-msg">No assignments posted yet.</p>
+                </div>
+            </section>
+
+            <!-- Admin Panel Button and Form (placed after the list) -->
             <button id="adminToggleBtn" class="admin-btn">🔐 Post Assignment</button>
 
             <!-- Admin Form Section -->
@@ -33,7 +41,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="qDate">Upload Date:</label>
+                        <label for="qDate">Assignment Date:</label>
                         <input type="date" id="qDate" required>
                     </div>
 
@@ -41,19 +49,11 @@
                         <label for="qPass">Password:</label>
                         <input type="password" id="qPass" placeholder="Enter admin password" required>
                     </div>
-
+                     
                     <button type="submit" class="btn-submit">Post Assignment</button>
                     <button type="button" id="closeBtn" class="btn-close">Close</button>
                 </form>
                 <div id="msgDiv" class="message"></div>
-            </section>
-
-            <!-- Questions Display Section -->
-            <section class="display-section">
-                <h2>All Assignments</h2>
-                <div id="assignList" class="assignments-container">
-                    <p class="empty-msg">No assignments posted yet.</p>
-                </div>
             </section>
         </main>
 
@@ -62,6 +62,11 @@
         </footer>
     </div>
 
+    <!-- Firebase SDK -->
+    <!-- Use compatibility (namespaced) Firebase so existing code calling `firebase.*` works -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
