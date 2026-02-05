@@ -3,7 +3,6 @@ const PASSWORD = 'bca12345';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAfipYiSOd-3dZK0klA5qv-EjA-WHkFlbs",
   authDomain: "assignment-portal-99ea7.firebaseapp.com",
   databaseURL: "https://assignment-portal-99ea7-default-rtdb.firebaseio.com",
   projectId: "assignment-portal-99ea7",
@@ -371,3 +370,4 @@ function updateLocalStorage(updatedAssignment) {
     showMessage('✅ Assignment updated successfully!', 'success');
     displayAssignments();
 }
+
